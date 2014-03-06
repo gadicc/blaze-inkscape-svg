@@ -12,7 +12,8 @@
   <ul>
   	<li>template-engine-preview-3: works</li>
   	<li>template-engine-preview-4: doesn't render template instance data</li>
-  	<li>template-engine-preview-10.1/blaze-rc0: doesn't compile (self-closed tags), or render (if superfluous tags removed, search for __END__ in the svg source)
+  	<li>template-engine-preview-10.1/blaze-rc0: doesn't compile (self-closed tags), or render (if superfluous tags removed, search for __END__ in the svg source).  Both tags are direct
+  	children of &lt;svg>
   		<ul>
   			<li><pre>&lt;sodipodi:namedview
 	     id="base" ... /></pre>See <a href="http://wiki.inkscape.org/wiki/index.php/Inkscape_SVG_vs._plain_SVG">Inkscape SVG vs. plain SVG</a></li>
@@ -21,8 +22,8 @@
     &lt;rdf:RDF>
         &lt;cc:Work>
             <b>&lt;dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></b>
-	    &lt;/cc:Work>
-	&lt;/rdf:RDF>
+        &lt;/cc:Work>
+    &lt;/rdf:RDF>
 &lt;/metadata></pre></li>
   		</ul>
   	</li>
@@ -133,7 +134,7 @@
 	         result="composite2" />
 	    </filter>
 	  </defs>
-	  <!-- remove until __END__ to get to compile -->
+	  <!-- remove until __END__ below to get to compile -->
 	  <sodipodi:namedview
 	     id="base"
 	     pagecolor="#ffffff"
